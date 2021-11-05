@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Main Container Styling */
+.container {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+/* Header Stylings */
+.main-header {
+  height: 12vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+}
+/* My Logo Stylings */
+.logo {
+  margin: 0px 25px;
+  font-family: "Crafty Girls", cursive;
+}
+/* Navbar Stylings */
+.navbar {
+  margin: 0px 20px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Crafty Girls", cursive;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  padding: 0px 16px;
+}
+.navbar ul li a:hover {
+  color: rgb(41, 192, 192);
+}
+.navbar ul li.active a {
+  color: rgb(41, 192, 192);
+}
+/* Main Section Styling */
+.main-section {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Josefin Sans" sans-serif;
+}
+
+.welcome {
+  color: whitesmoke;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 2.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.visit {
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 4.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.summary {
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* Buttons stylings */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.btn1 {
+  color: whitesmoke;
+  background-color: rgb(10, 78, 78);
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  margin: 0px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.btn1:hover {
+  color: rgb(10, 78, 78);
+  background-color: whitesmoke;
+}
+.btn2 {
+  padding: 10px;
+  margin: 0px 10px;
+  color: rgb(10, 78, 78);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: 0.5s ease;
+  font-weight: 400;
+  font-size: 1.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.btn2:hover {
+  background-color: rgb(10, 78, 78);
+  color: whitesmoke;
+}
+/* Animation Keyframes */
+.change-content:after {
+  content: "";
+  animation: change-text 12s infinite linear;
+  color: aqua;
+  text-transform: uppercase;
+}
+@keyframes change-text {
+  0% {
+    content: '"Lahore"';
+  }
+  20% {
+    content: '"Islamabad"';
+  }
+  40% {
+    content: '"karachi"';
+  }
+  60% {
+    content: '"Quetta"';
+  }
+  80% {
+    content: '"Multan"';
+  }
+  100% {
+    content: '"Peshawar"';
+  }
+}
